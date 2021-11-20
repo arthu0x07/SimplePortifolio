@@ -1,0 +1,29 @@
+.header-menu{
+    animation: x;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
+@keyframes OpenMenu{
+    from{
+        transform: translateY(-110%);
+    }
+
+    to{
+        transform: translateY(0%);
+    }
+}
+
+@keyframes CloseMenu{
+    from{
+        transform: translateY(0%);
+    }
+
+    to{
+        transform: translateY(-110%);
+    }
+}

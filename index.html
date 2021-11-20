@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
     <title>Portifólio</title>
 </head>
 <body>
@@ -17,6 +18,8 @@
         </a>
 
         <nav class="header-menu">
+            <i class="fas fa-bars buttonMenu" id="buttonMenuOpenned"></i>
+            
             <ul class="header-menu-lista">
                 <li> <a href="#sobre">Sobre mim</a> </li>
                 <li> <a href="#projects">Projetos</a> </li>
@@ -25,7 +28,7 @@
             </ul>
         </nav>
 
-        <i class="fas fa-bars buttonMenu"></i>
+        <i class="fas fa-bars buttonMenu" id="buttonMenuClosed"></i>
     </header>
 
     <main class="container-main">
@@ -196,6 +199,7 @@
     <footer class="conteiner-footer">
     </footer>
 
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/96fdea3235.js" crossorigin="anonymous"></script>
 </body>
 </html>
