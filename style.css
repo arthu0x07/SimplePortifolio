@@ -153,6 +153,7 @@ html{
 }
 
 .aboutme-title{
+    margin-top: 20vh;
     font-size: 3.5rem;
     color: #F9F9F9;
 }
@@ -239,6 +240,8 @@ html{
 }
 
 .projects-title{
+    margin-top: 5vh;
+
     font-size: 3.5rem;
     color: #F9F9F9;
 }
@@ -304,6 +307,7 @@ html{
 }
 
 .services-title{
+    margin-top: 5vh;
     font-size: 3.5rem;
     color: #F9F9F9;
     margin-bottom: 2vh;
