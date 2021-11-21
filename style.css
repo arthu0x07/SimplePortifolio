@@ -192,19 +192,19 @@ html{
 
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .conteiner-card{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
-    margin: 10px 20px;
+    width: 180px;
+    margin: 5rem;
 
-    min-width: 180px;
     height: 180px;
 }
 
@@ -414,6 +414,8 @@ html{
 .card-skills img{
     width: 50%;
 }
+
+/*Seção footer */
 
 .conteiner-footer{
     width: 100%;
