@@ -10,13 +10,16 @@ buttonMenuOpenned = document.getElementById("buttonMenuOpenned");
 buttonMenuOpenned.addEventListener('click', startMenu);
 
 function startMenu(){
-    if(IsOppen == true){
-        closeMenu();
-        
-    } else
+    if(document.body.clientWidth < 760){   
+        if(IsOppen == true){
+            closeMenu();
+            
+        } else
 
-    if(IsOppen == false){
-        openMenu();
+        if(IsOppen == false){
+            openMenu();
+        
+        }
     }
 }
 
@@ -24,6 +27,8 @@ function closeMenu(){
     console.log("fechou");
     headerMenu.style.animationName = "CloseMenu"
     IsOppen = false;
+
+    setTimeout(() => {headerMenu.style.animationName = "x"; clearTimeout()}, 2000)
 }
 
 function openMenu(){
