@@ -76,6 +76,7 @@
     animation-fill-mode: forwards;
 }
 
+
 @keyframes OpenMenu{
     from{
         transform: translateY(-110%);
@@ -102,7 +103,7 @@
     }
 
     to{
-        filter: brightness(200%);
+        filter: brightness(190%);
     }
 }
 
