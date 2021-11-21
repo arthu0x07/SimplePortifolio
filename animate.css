@@ -1,12 +1,13 @@
 .header-menu{
-    animation: x;
+    animation-name: x;
     animation-duration: 2s;
     animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
     animation-delay: 0s;
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-fill-mode: forwards;
-    
+
+    z-index: 9;
 }
 
 /* Animaçao de entrada... */
@@ -62,6 +63,19 @@
 
 }
 
+.main-image{
+    opacity: 0;
+    transform: translateY(20%);
+
+    animation: EntradaImagem;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+}
+
 @keyframes OpenMenu{
     from{
         transform: translateY(-110%);
@@ -113,5 +127,17 @@
     to{
         opacity: 1;
         transform: translateX(0%);
+    }
+}
+
+@keyframes EntradaImagem {
+    from{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0%);
     }
 }

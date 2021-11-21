@@ -28,7 +28,7 @@ function closeMenu(){
     headerMenu.style.animationName = "CloseMenu"
     IsOppen = false;
 
-    setTimeout(() => {headerMenu.style.animationName = "x"; clearTimeout()}, 2000)
+    setTimeout(() => {headerMenu.style.animationName = "x"; clearTimeout()}, 500)
 }
 
 function openMenu(){
