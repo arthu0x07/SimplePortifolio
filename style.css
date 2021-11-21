@@ -137,9 +137,8 @@ html{
     border-radius: 2px;
 }
 
-.button-download{
+.button-linked{
     background-color: #00DF5E;
-
     margin-right: 5px;
     color: #171717;
 }
@@ -231,6 +230,7 @@ html{
     color: #F9F9F9;
     margin-bottom: 0.5vh;
     text-align: center;
+
 }
 
 .subtitle-card{

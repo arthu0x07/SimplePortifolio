@@ -9,6 +9,59 @@
     
 }
 
+/* Animaçao de entrada... */
+.header-title{
+    opacity: 0;
+    transform: translateX(-100%);
+
+    animation: EntradaTituloHeader;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+}
+
+/* Animaçao de entrada... */
+.main-content{
+    animation: EntradaTextoMain;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-delay: 2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+
+    opacity: 0;
+
+    transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.main-subtitle{
+    animation: pulse;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+
+.button-design{
+    padding: 1.8rem 2.2rem;
+    transition-property: padding;
+    transition-duration: 1s;
+}
+
+.button-design:hover{
+    padding: 1.8rem 6.2rem;
+
+}
+
 @keyframes OpenMenu{
     from{
         transform: translateY(-110%);
@@ -26,5 +79,39 @@
 
     to{
         transform: translateY(-110%);
+    }
+}
+
+@keyframes pulse {
+    from{
+        filter: brightness(60%);
+    }
+
+    to{
+        filter: brightness(200%);
+    }
+}
+
+@keyframes EntradaTextoMain{
+    from{
+        transform: translateY(-100%);
+        opacity: 0.2;
+    }
+
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes EntradaTituloHeader {
+    from{
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0%);
     }
 }
