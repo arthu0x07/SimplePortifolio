@@ -280,9 +280,7 @@ html{
 
 .card-project{
     width: 30%;
-    max-width: 350px;
     min-width: 240px;
-
 
     padding: 20px;
     margin: 20px;
@@ -294,7 +292,10 @@ html{
 
 .image-project{
     width: 100%;
+    height: auto;
     min-height: 140px;
+
+    object-fit: cover;
 
     background-color: #171717;
 
@@ -570,28 +571,15 @@ html{
     }
 }
 
+@media (max-width: 700px) {
+    .card-project{
+        width: 75%;
+    }
+}
+
 @media (max-width: 400px) {
     .card-skills{
         width: 130px;
         margin: 2px;
     }
-}
-
-/*
-
-.card-services{
-    width: 350px;
-    height: 240px;
-    margin: 0px 2rem;
-    padding: 2rem;
-
-    border-radius: 2px;
-    border-bottom: 5px solid #00DF5E;
-
-    background-color: #171717;
-
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
 }
