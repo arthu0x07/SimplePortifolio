@@ -204,7 +204,7 @@ html{
 
     margin: 10px 20px;
 
-    width: 180px;
+    min-width: 180px;
     height: 180px;
 }
 
@@ -230,6 +230,7 @@ html{
     font-size: 3rem;
     color: #F9F9F9;
     margin-bottom: 0.5vh;
+    text-align: center;
 }
 
 .subtitle-card{
@@ -540,7 +541,7 @@ html{
 
         background-color: #171717f1;
 
-        transform: translateY(-110%);
+        transform: translateY(-200%);
     }
     
     .header-menu-lista{
