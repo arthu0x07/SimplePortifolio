@@ -458,6 +458,36 @@ html{
         width: 90%;
     }
 
+    .conteiner-options{
+        align-items: stretch;
+    }
+
+    .conteiner-options a{
+        flex-basis: 20%;
+        margin: 2%;
+        padding: 5rem;
+    }
+    
+    .conteiner-card{
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 0;
+
+        width: 100%;
+        flex-basis: 55%;
+        height: 100%;
+    }
+    
+    .card-image{
+        width: 20%;
+        height: 100px;
+    }
+    
+    .card-image img{
+        width: 100%;
+    }
+    
+
 }
 
 @media (max-width: 1080px) {
