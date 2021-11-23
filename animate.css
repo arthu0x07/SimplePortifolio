@@ -1,11 +1,11 @@
 .header-menu{
-    animation-name: x;
-    animation-duration: 2s;
-    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation-name: pulseTwo;
+    animation-duration: 1s;
+    animation-timing-function: ease;
     animation-delay: 0s;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    animation-fill-mode: forwards;
+    animation-iteration-count: 6;
+    animation-direction: alternate;
+    animation-fill-mode: both;
 
     z-index: 9;
 }
@@ -104,6 +104,16 @@
 
     to{
         filter: brightness(190%);
+    }
+}
+
+@keyframes pulseTwo {
+    from{
+        opacity: 1;
+    }
+
+    to{
+        opacity: 0;
     }
 }
 
